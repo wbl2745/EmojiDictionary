@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="63.418290854572717"/>
         </scene>
-        <!--View Controller-->
+        <!--Big Emoji View Controller-->
         <scene sceneID="k7O-Wg-knX">
             <objects>
-                <viewController id="aN0-R5-dL7" sceneMemberID="viewController">
+                <viewController id="aN0-R5-dL7" customClass="BigEmojiViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y4J-4H-SxB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,22 +59,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volcano errupting " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLL-9R-Wtt">
-                                <rect key="frame" x="10" y="636" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="86.5" y="377" width="203" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fLL-9R-Wtt" firstAttribute="leading" secondItem="Odf-eG-jti" secondAttribute="leading" constant="10" id="DQV-Ad-b2c"/>
-                            <constraint firstItem="Odf-eG-jti" firstAttribute="bottom" secondItem="fLL-9R-Wtt" secondAttribute="bottom" constant="10" id="dys-Pm-bSN"/>
+                            <constraint firstItem="fLL-9R-Wtt" firstAttribute="top" secondItem="GNa-PJ-cwk" secondAttribute="bottom" constant="30" id="fM2-GS-lMu"/>
                             <constraint firstItem="GNa-PJ-cwk" firstAttribute="centerX" secondItem="Y4J-4H-SxB" secondAttribute="centerX" id="i4N-5b-UPa"/>
-                            <constraint firstItem="Odf-eG-jti" firstAttribute="trailing" secondItem="fLL-9R-Wtt" secondAttribute="trailing" constant="10" id="rgT-I5-EDO"/>
+                            <constraint firstItem="fLL-9R-Wtt" firstAttribute="centerX" secondItem="Y4J-4H-SxB" secondAttribute="centerX" id="tMf-w0-t6e"/>
                             <constraint firstItem="GNa-PJ-cwk" firstAttribute="top" secondItem="Odf-eG-jti" secondAttribute="top" constant="20" id="xVd-EI-CMD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Odf-eG-jti"/>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="GNa-PJ-cwk" id="r38-w5-YcO"/>
+                        <outlet property="emojiTitle" destination="fLL-9R-Wtt" id="rOZ-3w-Ins"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TC-Gu-Ooz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
